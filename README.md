@@ -42,22 +42,8 @@ Create a permanent Pluggable Database (PDB) using the exact naming convention: `
 sqlplus / as sysdba
 ```
 
-**Step 2: Verify CDB Status**
 
-```sql
-SHOW PDBS;
-```
-
-**Initial Output:**
-
-```
-    CON_ID CON_NAME                       OPEN MODE  RESTRICTED
----------- ------------------------------ ---------- ----------
-         2 PDB$SEED                       READ ONLY  NO
-         3 ORCLPDB                        READ WRITE NO
-```
-
-**Step 3: Create Pluggable Database**
+**Step 2: Create Pluggable Database**
 
 ```sql
 CREATE PLUGGABLE DATABASE dj_pdb_25962 
@@ -68,7 +54,7 @@ CREATE_FILE_DEST='C:\ORACLE21C\ORADATA\ORCL\';
 <img width="588" height="113" alt="Screenshot 2026-02-16 180125" src="https://github.com/user-attachments/assets/0a81ba96-1040-459b-86cd-2e458eba7908" />
 
 
-**Step 4: Open the PDB**
+**Step 3: Open the PDB**
 
 ```sql
 ALTER PLUGGABLE DATABASE dj_pdb_25962 OPEN;
@@ -77,7 +63,7 @@ ALTER PLUGGABLE DATABASE dj_pdb_25962 OPEN;
 <img width="371" height="70" alt="Screenshot 2026-02-16 180850" src="https://github.com/user-attachments/assets/5b923f81-b076-4733-a84c-74056cb7eac8" />
 
 
-**Step 5: Set Auto-Open (Persist State)**
+**Step 4: Set Auto-Open (Persist State)**
 
 ```sql
 ALTER PLUGGABLE DATABASE dj_pdb_25962 SAVE STATE;
@@ -86,7 +72,7 @@ ALTER PLUGGABLE DATABASE dj_pdb_25962 SAVE STATE;
 <img width="395" height="49" alt="image" src="https://github.com/user-attachments/assets/d9b39d31-d208-4cd5-a20c-fc9848ce5b1d" />
 
 
-**Step 6: Verify PDB Status**
+**Step 5: Verify PDB Status**
 
 ```sql
 SHOW PDBS;
@@ -96,7 +82,7 @@ SHOW PDBS;
 <img width="418" height="91" alt="image" src="https://github.com/user-attachments/assets/c424fe74-ed32-4ed6-ba9e-ba635f4b88bd" />
 
 
-**Step 7: Verify User Creation**
+**Step 6: Verify User Creation**
 
 ```sql
 ALTER SESSION SET CONTAINER = dj_pdb_25962;
@@ -116,7 +102,7 @@ WHERE USERNAME = 'DJAMALADINE_PLSQLAUCA_25962';
 <img width="665" height="104" alt="image" src="https://github.com/user-attachments/assets/06cc6809-37e7-4491-a0b6-7c150498d25a" />
 
 
-**Step 8: Test User Connection**
+**Step 7: Test User Connection**
 
 ```bash
 sqlplus djamaladine_plsqlauca_25962/6860@localhost:1521/dj_pdb_25962
@@ -198,7 +184,7 @@ SHOW PDBS;
 <img width="653" height="134" alt="image" src="https://github.com/user-attachments/assets/f2832173-f3bf-4878-8a29-cb47d8e85c6e" />
 
 
-## Task 3: Oracle Enterprise Manager Express
+## Task 7: Oracle Enterprise Manager Express
 
 ### Objective
 
