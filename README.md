@@ -1,5 +1,3 @@
-# oracle_pdb_ass_II_25962_djamaladine
-
 # Oracle Pluggable Database Assignment II
 
 ## Table of Contents
