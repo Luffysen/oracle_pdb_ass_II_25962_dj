@@ -253,17 +253,6 @@ lsnrctl status
 *   Check listener status to confirm EM Express accessibility.
 *   Document each step with screenshots for verification.
 
-## Integrity Statement
-
-I, Djamaladine (Student ID: 25962), hereby confirm that:
-
-*   ✅ This assignment was completed individually without collaboration
-*   ✅ All SQL commands were manually typed and executed by me
-*   ✅ No commands, screenshots, or repositories were copied from classmates
-*   ✅ No AI tools (ChatGPT, Claude, etc.) were used to generate SQL commands or solutions
-*   ✅ All screenshots reflect my actual execution environment and database instance
-*   ✅ The work presented is my own original work
-
 
 
 
